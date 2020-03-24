@@ -3,14 +3,19 @@
 <p id="p1">málsgrein 2</p>
 <div>div 1</div>
   <p id="p2">málsgrein 3</p>
-<div>div 2</div>
+<div id="div2">div 2</div>
 
 <script type="text/javascript">
     document.querySelector("p").style.color="red";
     document.querySelector("p").textContent="paragraph 1";
     document.querySelector("#p1").textContent="paragraph 2";
     document.querySelector("#p2").textContent="paragraph 3";
-    let header1 = document.getElementById('myDiv')
-    header1.innerHTML = '<h1>Verkefni 2.2.</h1>';
+    let myDiv = document.getElementById('myDiv');
+    myDiv.innerHTML = '<h1>Verkefni 2.2.</h1>';
+
+    let myDiv2 = document.getElementById('div2');
+    let para1 = document.createElement('p');
+    para1.textContent = "Jóhannes";
+    myDiv2.append(para1);
     
 </script>
